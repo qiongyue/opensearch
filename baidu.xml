@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>百度</ShortName>
+  <Description>百度一下，你就知道。</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image height="16" width="16" type="image/x-icon">http://www.baidu.com/favicon.ico</Image>
+  <Url type="text/html" method="GET" template="http://www.baidu.com/s">
+    <Param name="wd" value="{searchTerms}" />
+    <Param name="ie" value="utf-8" />
+  </Url>
+  <Url type="application/x-suggestions+json" template="http://suggestion.baidu.com/su?wd={searchTerms}&amp;action=opensearch&amp;ie=utf-8&amp;from=Firefox" />
+</OpenSearchDescription>
